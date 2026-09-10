@@ -18,6 +18,9 @@ This rule enforces a strict boundary logic based on your location in the folder 
 ## Installation
 
 ```bash
+# deno
+deno add npm:eslint-plugin-mod-boundaries
+# npm
 npm install --save-dev eslint-plugin-mod-boundaries
 ```
 
