@@ -48,7 +48,7 @@ jobs:
         run: deno run -A scripts/build_npm.ts ${{ steps.get_version.outputs.VERSION }}
 
       - name: Publish to npm
-        uses: JS-DevTools/npm-publish@v4
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package: ./npm/package.json
+        run: |
+          cd ./npm
+          npm config set //registry.npmjs.org/:_authToken "${{ secrets.NPM_TOKEN }}"
+          npm publish --access public
