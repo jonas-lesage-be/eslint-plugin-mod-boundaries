@@ -10,7 +10,7 @@ if (!version) {
 }
 
 await build({
-  entryPoints: ["./mod.ts"],
+  entryPoints: ["./src/mod.ts"],
   outDir: "./npm",
   shims: {
     deno: true,
