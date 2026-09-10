@@ -13,12 +13,15 @@ const recommendedConfig: Linter.Config[] = [
       "mod-boundaries/enforce-mod-boundaries": "error",
     },
   },
-] as const;
+];
 
+/**
+ * The ESLint plugin for enforcing module boundaries.
+ */
 export const eslintPluginModBoundaries: ESLint.Plugin = {
   meta: {
     name: "eslint-plugin-mod-boundaries",
-    version: "0.1.0",
+    version: "0.3.0",
   },
   rules: {
     "enforce-mod-boundaries": enforceModBoundariesRule,
@@ -35,4 +38,7 @@ if (recommendedConfig[0]) {
   };
 }
 
+/**
+ * Default export of the eslint-plugin-mod-boundaries plugin.
+ */
 export default eslintPluginModBoundaries;
