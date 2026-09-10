@@ -4,7 +4,7 @@
   "description": "An ESLint plugin to enforce module boundaries using module files.",
   "author": "Jonas Lesage <jonas.lesage@outlook.com>",
   "license": "MIT",
-  "exports": "./mod.ts",
+  "exports": "./src/mod.ts",
   "nodeModulesDir": "auto",
   "publish": {
     "include": ["mod.ts", "src/**/*.ts", "deno.json", "README.md", "LICENSE"]
