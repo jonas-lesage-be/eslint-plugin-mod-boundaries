@@ -21,7 +21,7 @@ const recommendedConfig: Linter.Config[] = [
 export const eslintPluginModBoundaries: ESLint.Plugin = {
   meta: {
     name: "eslint-plugin-mod-boundaries",
-    version: "0.3.1",
+    version: "0.3.2",
   },
   rules: {
     "enforce-mod-boundaries": enforceModBoundariesRule,

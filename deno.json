@@ -1,6 +1,6 @@
 {
   "name": "@jonas-lesage-be/eslint-plugin-mod-boundaries",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "An ESLint plugin to enforce module boundaries using module files.",
   "author": "Jonas Lesage <jonas.lesage@outlook.com>",
   "license": "MIT",
