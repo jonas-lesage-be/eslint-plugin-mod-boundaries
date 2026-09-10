@@ -29,8 +29,10 @@ export const eslintPluginModBoundaries: ESLint.Plugin = {
   },
 };
 
-recommendedConfig[0].plugins = {
-  "mod-boundaries": eslintPluginModBoundaries,
-};
+if (recommendedConfig[0]) {
+  recommendedConfig[0].plugins = {
+    "mod-boundaries": eslintPluginModBoundaries,
+  };
+}
 
 export default eslintPluginModBoundaries;
