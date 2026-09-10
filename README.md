@@ -28,7 +28,7 @@ The plugin automatically detects your alias settings from **`deno.json`** (looki
 
 Using the built-in `recommended` preset is the easiest way to get started:
 
-```javascript
+```js
 import modBoundaries from "eslint-plugin-mod-boundaries";
 
 export default [
@@ -53,7 +53,7 @@ This rule analyzes the structural distance between the importing file and the ta
 
 #### Incorrect
 
-```typescript
+```ts
 // Inside: src/utils/mod.ts
 
 // Error: cannot use parent traversal to cross into a neighboring module.
@@ -65,7 +65,7 @@ import type { DenoConfig } from "@/models/deno-config.ts";
 
 #### Correct
 
-```typescript
+```ts
 // Inside: src/utils/mod.ts
 
 // Correct: crosses to the neighboring module via its root barrel file.
