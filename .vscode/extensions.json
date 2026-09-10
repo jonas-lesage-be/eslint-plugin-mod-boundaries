@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "shardulm94.trailing-spaces",
+    "sonarsource.sonarlint-vscode",
+    "usernamehw.errorlens",
+    "wayou.vscode-todo-highlight",
+    "yoavbls.pretty-ts-errors",
+    "EditorConfig.EditorConfig",
+    "Gruntfuggly.todo-tree"
+  ]
+}
