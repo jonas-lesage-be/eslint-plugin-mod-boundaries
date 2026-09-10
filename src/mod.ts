@@ -13,7 +13,7 @@ const recommendedConfig: Linter.Config[] = [
       "mod-boundaries/enforce-mod-boundaries": "error",
     },
   },
-];
+] as const;
 
 export const eslintPluginModBoundaries: ESLint.Plugin = {
   meta: {
