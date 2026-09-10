@@ -4,16 +4,12 @@ ESLint plugin that enforces strict **module encapsulation** through barrel files
 
 It automatically rewrites messy parent imports (`../../`) into clean alias paths (`@/`) while preserving standard local imports (`./`).
 
----
-
 ## Import rules
 
 This rule enforces a strict boundary logic based on your location in the folder tree:
 
 - **Neighboring modules ➔ Use `@/`**: You are not allowed to use parent traversal (`../..`) to reach into another module. Crossing over to a different parent or sibling module _must_ go through the configured root alias.
 - **Current module or subdirectories ➔ Use `./`**: When referencing boundaries within the current tree of the module or starting from the root ancestor, clean relative paths are enforced.
-
----
 
 ## Installation
 
@@ -23,8 +19,6 @@ deno add npm:eslint-plugin-mod-boundaries
 # npm
 npm install --save-dev eslint-plugin-mod-boundaries
 ```
-
----
 
 ## Configuration
 
@@ -50,8 +44,6 @@ export default [
   },
 ];
 ```
-
----
 
 ## Rule details
 
