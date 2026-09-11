@@ -76,3 +76,32 @@ import { resolveAlias } from "./resolve-alias.ts";
 ```
 
 This rule is **auto-fixable** with `eslint --fix`.
+
+## Project layout
+
+```text
+├── doc.go                     # Documentation for main
+├── main.go                    # Application entry point
+└── internal/                  # Internal application code
+    ├── cli/                   # Binds Cobra commands and maps Viper flag schemas.
+    ├── config/                # Loads configuration.
+    ├── httpx/                 # HTTP response helpers and constants.
+    ├── middleware/            # HTTP middleware (auth, cors, static).
+    ├── pathsafe/              # Safe file path resolution and validation.
+    ├── router/                # HTTP routing definitions and mapping.
+    ├── server/                # HTTP server setup and middleware chaining.
+    ├── storage/               # File storage management.
+    ├── token/                 # HMAC bearer token pool management.
+    └── units/                 # Defines file size units.
+```
+
+## Contributing
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/name`).
+3. Ensure all code passes `deno task lint:fix`.
+4. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
