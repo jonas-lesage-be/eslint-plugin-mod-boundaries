@@ -81,23 +81,23 @@ This rule is **auto-fixable** with `eslint --fix`.
 
 ```text
 ├── .github/
-│   └── workflows/                          # GitHub Actions for automated CI/CD deployment pipelines.
-├── .vscode/                                # VSCode workspace config.
+│   └── workflows/                    # GitHub Actions for automated CI/CD deployment pipelines.
+├── .vscode/                          # VSCode workspace config.
 ├── scripts/
-│   └── build_npm.ts                        # Compilation script to publish the npm package.
+│   └── build_npm.ts                  # Compilation script to publish the npm package.
 ├── src/
-│   ├── models/                             # Directory containing TypeScript interfaces and types.
-│   ├── rules/                              # Directory containing the core ESLint rules.
-│   │   ├── enforce-mod-boundaries.ts       # The primary logic for enforcing module boundaries.
-│   └── mod.ts                              # Barrel file that re-exports all modules in the `src` directory for simplified imports.
-├── .gitignore                              # Specifies intentionally untracked files that Git should ignore.
-├── LICENSE                                 # The license file.
-├── README.md                               # Project documentation, installation guides, and rules usage.
-├── deno.json                               # Deno config file specifying imports, tasks, and other settings.
-├── deno.lock                               # Deno lock file ensuring consistent dependency versions across environments.
-├── eslint.config.js                        # ESLint config file.
-├── prettier.config.ts                      # Prettier config file for automated code formatting styles.
-└── tsconfig.eslint.json                    # TypeScript config for ESLint.
+│   ├── models/                       # Directory containing TypeScript interfaces and types.
+│   ├── rules/                        # Directory containing the core ESLint rules.
+│   │   ├── enforce-mod-boundaries.ts # The primary logic for enforcing module boundaries.
+│   └── mod.ts                        # Barrel file that re-exports all modules in the `src` directory for simplified imports.
+├── .gitignore                        # Specifies intentionally untracked files that Git should ignore.
+├── LICENSE                           # The license file.
+├── README.md                         # Project documentation, installation guides, and rules usage.
+├── deno.json                         # Deno config file specifying imports, tasks, and other settings.
+├── deno.lock                         # Deno lock file ensuring consistent dependency versions across environments.
+├── eslint.config.js                  # ESLint config file.
+├── prettier.config.ts                # Prettier config file for automated code formatting styles.
+└── tsconfig.eslint.json              # TypeScript config for ESLint.
 ```
 
 ## Contributing
