@@ -80,19 +80,24 @@ This rule is **auto-fixable** with `eslint --fix`.
 ## Project layout
 
 ```text
-├── doc.go                     # Documentation for main
-├── main.go                    # Application entry point
-└── internal/                  # Internal application code
-    ├── cli/                   # Binds Cobra commands and maps Viper flag schemas.
-    ├── config/                # Loads configuration.
-    ├── httpx/                 # HTTP response helpers and constants.
-    ├── middleware/            # HTTP middleware (auth, cors, static).
-    ├── pathsafe/              # Safe file path resolution and validation.
-    ├── router/                # HTTP routing definitions and mapping.
-    ├── server/                # HTTP server setup and middleware chaining.
-    ├── storage/               # File storage management.
-    ├── token/                 # HMAC bearer token pool management.
-    └── units/                 # Defines file size units.
+├── .github/
+│   └── workflows/                          # GitHub Actions for automated CI/CD deployment pipelines.
+├── .vscode/                                # VSCode workspace config.
+├── scripts/
+│   └── build_npm.ts                        # Compilation script to publish the npm package.
+├── src/
+│   ├── models/                             # Directory containing TypeScript interfaces and types.
+│   ├── rules/                              # Directory containing the core ESLint rules.
+│   │   ├── enforce-mod-boundaries.ts       # The primary logic for enforcing module boundaries.
+│   └── mod.ts                              # Barrel file that re-exports all modules in the `src` directory for simplified imports.
+├── .gitignore                              # Specifies intentionally untracked files that Git should ignore.
+├── LICENSE                                 # The license file.
+├── README.md                               # Project documentation, installation guides, and rules usage.
+├── deno.json                               # Deno config file specifying imports, tasks, and other settings.
+├── deno.lock                               # Deno lock file ensuring consistent dependency versions across environments.
+├── eslint.config.js                        # ESLint config file.
+├── prettier.config.ts                      # Prettier config file for automated code formatting styles.
+└── tsconfig.eslint.json                    # TypeScript config for ESLint.
 ```
 
 ## Contributing
